@@ -1,0 +1,67 @@
+.element-wrapper{
+    padding: 0;
+}
+.content-box{
+    padding-top: 0;
+}
+.cm-form-wrapper{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.cm-form-label{
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  right: 22px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1em;
+  letter-spacing: 0.025em;
+  padding: 6px 5px 4px 5px;
+  margin: 0;
+  z-index: 1;
+  color: #4d6575;
+  border-radius: 3px;
+  background-color: white;
+  pointer-events: none;
+}
+.cm-form-element textarea{
+  height: 104.979px;
+}
+.cm-input{
+  padding-top: 22px;
+  padding-bottom: 6px;
+  min-height: 56px;
+  padding-right: 2px;
+}
+.cm-input-xlarge{
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 23px;
+    line-height: 32px;
+
+}
+.cm-textarea{
+display: inline-block;
+box-sizing: border-box;
+margin: 4px 0;
+text-decoration: none;
+vertical-align: middle;
+cursor: pointer;
+outline: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+border: 1px solid #b2c2cd;
+border-radius: 4px;
+cursor: text;
+padding: 6px 10px;
+transition: border .1s linear;
+min-height: 40px;
+resize: none;
+padding-top: 22px;
+padding-bottom: 6px;
+min-height: 56px;
+}
+

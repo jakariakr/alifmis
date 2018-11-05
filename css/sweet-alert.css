@@ -1,0 +1,237 @@
+.alert-popup{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.2);
+  animation-name:openpopup;
+  animation-duration:.1s;
+  
+}
+.alert-content{
+    background-color: #ffffff;
+    width: 478px;
+	padding: 30px 25px;
+    border-radius: 5px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    margin-left: -256px;   
+    overflow: hidden;
+    z-index: 2000;
+    animation-name:modalopen;
+    animation-duration:.1;
+	
+}
+
+
+.icon-success-animate::after,
+.icon-success-animate::before {
+         
+	 content: '';
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+	
+}
+
+.icon-success-animate::before{
+       -webkit-border-radius: 120px 0 0 120px;
+    border-radius: 120px 0 0 120px;
+    top: -7px;
+    left: -33px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 60px 60px;
+    transform-origin: 50px 50px;
+}
+.icon-success-animate::after{
+    -webkit-border-radius: 0 120px 120px 0;
+    border-radius: 0 120px 120px 0;
+    top: -11px;
+    left: 30px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 60px;
+    transform-origin: 0 60px
+}
+
+.icon-success-animate{
+	margin: 20px auto;
+	width: 80px;
+	height: 80px;
+	border: 4px solid #A5DC86;
+	border-radius: 50%;
+	position: relative;
+	
+}
+
+.animateSuccessMini{
+	
+	width: 18px;
+    left: 14px;
+    top: 46px;
+    transform: rotate(45deg);
+	height: 5px;
+    background-color: #A5DC86;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    
+}
+	
+
+
+.animateSuccessLong{
+	
+	width: 43px;
+    right: 8px;
+    top: 38px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: 5px;
+    background-color: #A5DC86;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    
+
+}
+
+.placeholder{
+	
+	width: 80px;
+    height: 80px;
+    border: 4px solid rgba(165, 220, 134, .2);
+    -webkit-border-radius: 40px;
+    border-radius: 50%;
+    box-sizing: content-box;
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    z-index: 2;
+}
+
+.touchup{
+	
+	    width: 5px;
+    height: 90px;
+    background-color: #fff;
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    z-index: 1;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@keyframes animateSuccessMini {
+    0%, 54% {
+        width: 0;
+        left: 1px;
+        top: 19px
+    }
+    70% {
+        width: 45px;
+        left: -8px;
+        top: 37px
+    }
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px
+    }
+    100% {
+        width: 18px;
+        left: 14px;
+        top: 45px
+    }
+}
+
+
+@keyframes animateSuccessLong {
+    0%, 65% {
+        width: 0;
+        right: 46px;
+        top: 54px
+    }
+    84% {
+        width: 47px;
+        right: 0;
+        top: 35px
+    }
+    100% {
+        width: 43px;
+        right: 8px;
+        top: 38px;
+    }
+}
+
+	
+@-webkit-keyframes rotatePlaceholder {
+    0%, 5% {
+        transform: rotate(-60deg);
+      
+    }
+    100%,
+    12% {
+        transform: rotate(-405deg);
+       
+    }
+}
+
+.animateSuccessMini {    
+    animation: animateSuccessMini .75s;
+}
+.animateSuccessLong {   
+    animation: animateSuccessLong .75s;
+}
+.icon-success-animate::after {   
+    animation: rotatePlaceholder 4.25s ease-in;
+}
+	
+	
+	
+/*animation for pupup content*/
+@keyframes modalopen{
+  from{ opacity: 0}
+  to {opacity: 1}
+}
+
+
+.btn-close{
+	padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.33333;
+    border-radius: 0.3rem;
+	color: #fff;
+    background-color: #039cfd;
+    
+}
+.btn-close:hover{
+	border-color: #039cfd;
+}
+
+@keyframes openpopup{
+	0%{
+		width: 80%;
+		height: 80%;
+	}
+	50%{
+		width: 110%;
+		height: 110%;
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+	}	
+}

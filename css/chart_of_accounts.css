@@ -1,0 +1,51 @@
+.form-header{
+  margin-bottom: 2rem;
+}
+.cm-header{
+   font-size: 30px;
+   padding: 10px;
+   margin: 10px;
+   margin-right: 0;
+  padding-right: 0;
+}
+.cm-q-icon .btn{
+      padding-left: 0;
+      padding-bottom: 20px;
+}
+.cm-head-btn{
+   width: 200px;
+   float: right;
+}
+.btn-header{
+    height: 35px;
+   border-radius: 30px;
+}
+.cm-table-cell-head{
+  background-color: #e0e7eb;
+}
+.step-triggers legend:before{
+  background-color: rgba(0, 0, 0, 0);
+}
+.modal-header{
+      border-bottom: 1px solid #D4DDE3;
+}
+.modal-body{
+      border-bottom: 1px solid #D4DDE3;
+}
+.label-star:after{
+  content: "*";
+  color: #c22929;
+  margin-left: 4px;
+  vertical-align: bottom;
+  font-size: 1.25em;
+}
+.step-content.active{
+  padding: 0;
+}
+.step-triggers .step-trigger{
+      font-size: 1rem;
+      padding-bottom: 1.6rem;
+}
+.step-triggers legend{
+  text-align: center;
+}
